@@ -51,6 +51,7 @@ class _MyHomePageState extends State<MyHomePage> {
   int _counter = 0;
   String _numState = "GENAP";
   TextStyle _stateColor = TextStyle(color: Colors.red);
+  bool _showButton = false;
 
   void _updateNumState() {
     if (_counter % 2 == 0) {
@@ -60,6 +61,12 @@ class _MyHomePageState extends State<MyHomePage> {
     else {
       _numState = "GANJIL";
       _stateColor = TextStyle(color: Colors.blue);
+    }
+    if (_counter == 0) {
+      _showButton = false;
+    }
+    else {
+      _showButton = true;
     }
   }
 
@@ -141,10 +148,13 @@ class _MyHomePageState extends State<MyHomePage> {
           children: [
             Align(
               alignment: Alignment.bottomLeft,
-              child: FloatingActionButton(
-                onPressed: _decrementCounter,
-                tooltip: 'Decrement',
-                child: const Icon(Icons.horizontal_rule),
+              child: Visibility(
+                visible: _showButton,
+                child: FloatingActionButton(
+                  onPressed: _decrementCounter,
+                  tooltip: 'Decrement',
+                  child: const Icon(Icons.horizontal_rule),
+                ),
               ),
             ),
             Align(
