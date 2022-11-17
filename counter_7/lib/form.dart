@@ -169,35 +169,6 @@ class _FormPageState extends State<FormPage> {
                     ),
                   ),
                 ),
-                // Padding(
-                //   padding: const EdgeInsets.all(5),
-                //   child: Row(
-                //     children: [
-                //       const Icon(Icons.calendar_month),
-                //       TextButton(
-                //         style: ButtonStyle(
-                //           backgroundColor: MaterialStateProperty.all(Colors.blueGrey),
-                //         ),
-                //         onPressed: () {
-                //           showDatePicker(
-                //             context: context,
-                //             initialDate: DateTime.now(),
-                //             firstDate: DateTime(2000),
-                //             lastDate: DateTime(2099),
-                //           ).then((value){
-                //             setState(() {
-                //               tanggal = value!;
-                //             });
-                //           });
-                //         },
-                //         child: const Text(
-                //           'Pilih Tanggal',
-                //           style: TextStyle(color: Colors.white),
-                //         ),
-                //       ),
-                //     ],
-                //   ),
-                // ),
                 Padding(
                   padding: const EdgeInsets.all(5),
                   child: TextButton(
