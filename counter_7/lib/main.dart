@@ -1,3 +1,4 @@
+import 'package:counter_7/watchlist_page.dart';
 import 'package:flutter/material.dart';
 import 'package:counter_7/form.dart';
 import 'package:counter_7/counter.dart';
@@ -49,6 +50,7 @@ class _MyAppState extends State<MyApp> {
         '/counter': (context) => const CounterPage(),
         '/form': (context) => FormPage(addData: _addData),
         '/data': (context) => DataPage(listData: _listData),
+        '/watchlist':(context) => MyWatchlistPage(),
       },
     );
   }

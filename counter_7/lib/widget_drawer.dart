@@ -34,6 +34,13 @@ class DrawerWidget extends StatelessWidget {
               Navigator.of(context).pushReplacementNamed('/data');
             },
           ),
+          ListTile(
+            title: const Text('My Watchlist'),
+            onTap: () {
+              // Route menu ke halaman my watchlist
+              Navigator.of(context).pushReplacementNamed('/watchlist');
+            },
+          ),
         ],
       ),
     );
